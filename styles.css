@@ -1,12 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Sen:400,700&display=swap");
-
+/* Styles of the body */
 body {
   height: 50vh;
   margin: 10rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
   font-size: 25px;
   font-family: "Sen", sans-serif;
   font-variant: small-caps;
   background-color: #b3cef0;
+}
+
+/* Design of the background */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+/* Animation of the background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

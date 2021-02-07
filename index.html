@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Service Date Estimation</title>
     <link rel="stylesheet" href="styles.css">
-    
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </head>
@@ -14,13 +14,14 @@
 <body>
     <h1 id="header">Calculate your next estimated service</h1>
     <h3 id="subheader">Enter the current mileage to calculate your next estimated service time</h3>
-    <form id="form" >
-        <p>Last mileage <input type="number" id="last__mileage" value="110000"/></p>
-        <p>Last date <input type="date" id="last__date" value="2021-02-01"/></p> 
-        <p>Current mileage <input type="number" id="current__mileage" placeholder="Enter the current mileage" required/></p>
-        <button id="button" onclick="estimatedDate()" >Submit</button>
-        <h2 id="estimated"></h2>
+    <form id="form">
+        <p>Last mileage (km) <input type="number" id="last__mileage" value="110000" /></p>
+        <p>Last date <input type="date" id="last__date" value="2021-02-01" /></p>
+        <p>Current mileage <input type="number" id="current__mileage" placeholder="Enter the current mileage"
+                required /></p>
+        <button id="button" onclick="estimatedDate()">Submit</button> 
     </form>
+    <h2 id="estimated"></h2>    <!-- When submit button is clicked successfully Next estimated service date will be shown -->
 </body>
 
 </html>
